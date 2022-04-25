@@ -1,0 +1,6 @@
+package com.hexaware.inheritanceinhibernate.entity;
+
+public class ContractEmployee {
+	private double hourlySalary;
+	
+}

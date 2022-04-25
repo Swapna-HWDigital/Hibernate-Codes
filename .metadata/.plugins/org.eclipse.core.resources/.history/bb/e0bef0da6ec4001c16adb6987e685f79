@@ -1,0 +1,19 @@
+package com.hexaware.inheritanceinhibernate;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.hexaware.inheritanceinhibernate.entity.Employee;
+
+public class TestHibernateInheritance {
+	
+	public static void main(String[] args) {
+		Transaction transaction = null;
+		Session session = null;
+		
+		Employee emp = new Employee("Johny");
+		
+		
+	}
+
+}

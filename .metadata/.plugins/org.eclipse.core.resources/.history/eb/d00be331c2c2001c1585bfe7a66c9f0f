@@ -1,0 +1,12 @@
+package com.hexaware.jdbcoperations;
+
+public class JDBCUtil {
+	
+	String choice = null;
+	char ch = 'y';
+	
+	switch(choice){
+		
+	}
+
+}

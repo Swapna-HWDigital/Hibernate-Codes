@@ -1,0 +1,8 @@
+package com.hexaware.hibernateonetomanyexample.entity;
+
+@Entity
+public class StudentProfile {
+	
+	
+
+}

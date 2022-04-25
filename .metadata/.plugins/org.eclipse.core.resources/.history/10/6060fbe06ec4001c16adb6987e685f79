@@ -1,0 +1,26 @@
+package com.hexaware.inheritanceinhibernate.entity;
+
+public class ContractEmployee {
+	private double hourlySalary;
+	
+	public ContractEmployee() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public ContractEmployee(double hourlySalary) {
+		super();
+		this.hourlySalary = hourlySalary;
+	}
+
+	public double getHourlySalary() {
+		return hourlySalary;
+	}
+
+	public void setHourlySalary(double hourlySalary) {
+		this.hourlySalary = hourlySalary;
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,27 @@
+package com.hexaware.jdbcoperations;
+
+/**
+ * @author Swapna
+ *
+ */
+
+public class JDBCCRUDOperations {
+	/**
+	 * this is method which retrives all data from a table
+	 * like
+	 * select * from customers;
+	 */
+	public void selectAllCustomers() {
+		
+	}
+	
+	/**
+	 * this is method which retrives the data from a table
+	 * like
+	 * select * from customers where customerid = ?;
+	 */
+	public void selectCustomerById() {
+		
+	}
+
+}

@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+D:\Hexaware PGET 2022\Application Development\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes

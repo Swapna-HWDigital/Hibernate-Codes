@@ -1,0 +1,14 @@
+package com.hexaware.hibernateonetomanyexample.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Application {
+	
+	private long applicationId;
+	private String applicationStatus;
+	private String applicationRemarks;
+	
+	
+
+}

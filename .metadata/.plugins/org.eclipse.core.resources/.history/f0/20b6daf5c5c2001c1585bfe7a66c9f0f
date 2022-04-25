@@ -1,0 +1,67 @@
+package com.hexaware.jdbcoperations;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.hexaware.dbconnection.DBConnection;
+
+/**
+ * @author Swapna
+ *
+ */
+
+public class JDBCCRUDOperations {
+	static public Connection conn = null;
+	static public PreparedStatement pstmt = null;
+	 public JDBCCRUDOperations(){
+		 conn = DBConnection.getDBConnection();
+		 if(conn !=null) {
+			 System.out.println("connection established");
+		 }
+	 }
+	/**
+	 * this is method which retrives all data from a table
+	 * like
+	 * select * from customers;
+	 */
+	public void selectAllCustomers() {
+		
+	}
+	
+	/**
+	 * this is method which retrives the data from a table
+	 * like
+	 * select * from customers where customerid = ?;
+	 */
+	public void selectCustomerById() {
+		
+	}
+	
+	/**
+	 * this is method which update the data from a table
+	 * like
+	 * update customers set customeremail=?,customermobno=? where customerid = ?;
+	 */
+	public void updateCustomerById() {
+		
+	}
+	
+	/**
+	 * this is method which delete the data from a table
+	 * like
+	 * delete from customers where customerid = ?;
+	 */
+	public void deleteCustomerById() {
+		
+	}
+	
+	/**
+	 * this is method inserts the data in to the table
+	 * like
+	 * insert into customers values(?,?,?,?);
+	 */
+	public void insertCustomer() {
+		
+	}
+
+}

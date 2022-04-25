@@ -1,0 +1,14 @@
+package com.hexaware.testjdbcoperations;
+
+import com.hexaware.jdbcoperations.JDBCCRUDOperations;
+
+public class JDBCCrudTest {
+
+	public static void main(String[] args) {
+		JDBCCRUDOperations jcrud = new JDBCCRUDOperations();
+		jcrud.insertCustomer();
+		jcrud.selectAllCustomers();
+
+	}
+
+}

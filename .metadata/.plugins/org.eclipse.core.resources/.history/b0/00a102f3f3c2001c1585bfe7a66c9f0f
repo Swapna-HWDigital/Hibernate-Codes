@@ -1,0 +1,5 @@
+package com.hexaware.hibernateexample.entity;
+
+public class Course {
+
+}

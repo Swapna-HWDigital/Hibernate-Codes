@@ -1,0 +1,27 @@
+package com.hexaware.inheritanceinhibernate;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.hexaware.inheritanceinhibernate.entity.ContractEmployee;
+import com.hexaware.inheritanceinhibernate.entity.Employee;
+import com.hexaware.inheritanceinhibernate.entity.PermanentEmployee;
+
+public class TestHibernateInheritance {
+	
+	public static void main(String[] args) {
+		Transaction transaction = null;
+		Session session = null;
+		
+		Employee emp = new Employee("Johny");
+		PermanentEmployee pemp = new PermanentEmployee();
+		pemp.setName("Joe");
+		pemp.setSalary(50000);
+		
+		ContractEmployee cemp = new ContractEmployee();
+		cemp.setName("Joe");
+		cemp.setSalary(5000);
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+com\hexaware\inheritanceinhibernate\entity\ContractEmployee.class
+com\hexaware\inheritanceinhibernate\entity\Employee.class
+com\hexaware\inheritanceinhibernate\entity\PermanentEmployee.class
+com\hexaware\inheritanceinhibernate\TestHibernateInheritance.class
+com\hexaware\inheritanceinhibernate\util\HibernateUtil.class

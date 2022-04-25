@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hexaware.hibernateonetomanyexample.entity">
+	<class name="Student" table="Student">
+
+		<id name="studentId" type="int">
+			<column name="student_Id" />
+			<generator class="increment" />
+		</id>
+
+		<property name="studentName" column="studentName" />
+		<property name="studentEmail" column="studentEmail" />
+
+		<many-to-one name="applicant" class="Applicant" fetch="select">
+            <column name="Applicant_Id" not-null="true" />
+        </many-to-one>
+	</class>
+</hibernate-mapping> 

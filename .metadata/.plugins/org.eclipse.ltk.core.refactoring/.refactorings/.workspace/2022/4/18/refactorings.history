@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;inheritanceinhexaware&apos; to &apos;inheritanceinhibernate&apos;" description="Rename resource &apos;inheritanceinhexaware&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/inheritanceinhexaware" name="inheritanceinhibernate" stamp="1650872436892" updateReferences="true"/>
+</session>

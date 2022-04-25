@@ -1,0 +1,22 @@
+package com.hexaware.jdbcoperations;
+
+import java.util.Scanner;
+
+public class JDBCUtil {
+	
+	String choice = null;
+	char ch = 'y';
+	Scanner sc = new Scanner(System.in);
+	public void jdbcTransactions() {
+		while(ch=='y') {
+			System.out.println("Enter the Database transaction...");
+			choice = sc.next();
+			switch(choice){
+			
+			}
+		}
+	
+
+	}
+
+}

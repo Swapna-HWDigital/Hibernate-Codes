@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.hexaware.setterdiexample.config.test&apos; to &apos;com.hexaware.setterdiexample.test&apos;&#x0D;&#x0A;- Original project: &apos;setterdiexample&apos;&#x0D;&#x0A;- Original element: &apos;setterdiexample/src/main/java/com.hexaware.setterdiexample.config.test&apos;&#x0D;&#x0A;- Renamed element: &apos;setterdiexample/src/main/java/com.hexaware.setterdiexample.test&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.hexaware.setterdiexample.config.test&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.hexaware.setterdiexample.config.test" name="com.hexaware.setterdiexample.test" qualified="false" references="true" stamp="1650658910052" textual="false" version="1.0"/>
+</session>

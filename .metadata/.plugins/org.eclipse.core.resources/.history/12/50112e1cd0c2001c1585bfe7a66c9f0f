@@ -1,0 +1,37 @@
+package com.hexaware.callablestmt;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class CallableStmtDemo {
+
+	public static void main(String[] args) {
+		Connection conn = null;
+		try {
+			//step 1:
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			//step 2:
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hexawarepget2022", 
+	                "root", 
+	                "root");
+			//step 3:
+			CallableStatement cstmt = conn.prepareCall("{?= call hello()}");
+			boolean status = cstmt.execute();
+			/*
+			 * The execute method returns a boolean to indicate the form of the first result. 
+			 * You must call either the method getResultSet or getUpdateCountto retrieve the result; 
+			 * you must call getMoreResults to move to any subsequent result(s).
+			 */
+			System.out.println(cstmt.getString(1));
+			if(status) {
+				System.out.println("executed procedure successfully");
+			}else {
+				System.out.println("not executed procedure successfully");
+			}
+
+	}catch (Exception e) {
+		e.printStackTrace();
+	}
+	}
+}

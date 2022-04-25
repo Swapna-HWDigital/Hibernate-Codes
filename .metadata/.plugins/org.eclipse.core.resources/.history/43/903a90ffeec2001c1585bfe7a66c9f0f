@@ -1,0 +1,15 @@
+package com.hexaware.hibernateexample.util;
+
+public class HibernateUtil {
+	
+	/*a service registry => is a contract defined for 
+	managing db services like connections,transaction etc. 
+	IT IS DEFINED IN org.hibernate.service.ServiceRegistry interface
+	
+		3 different implementation:
+		   => BootStrapServiceRegistry
+		   => StandardServiceRegistry
+		   => SessionFactoryServiceRegistry
+	*/
+
+}

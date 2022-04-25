@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hexaware.inheritanceinhibernate.entity">
+	<class name="Employee" table="employee_info">
+
+		<id name="id" type="long">
+			<column name="employee_id" />
+			<generator class="increment" />
+		</id>
+
+		<discriminator column="discriminator" type="string"></discriminator>
+		<property name="name" column="employee_name" />
+		<subclass name="PermanentEmployee" extends="Employee" discriminator-value="PE">
+			<property name="salary"/>
+		</subclass>
+				<property name="name" column="employee_name" />
+		<subclass name="ContractEmployee" extends="Employee" discriminator-value="CE">
+			<property name="hourlySalary"/>
+		</subclass>
+	</class>
+</hibernate-mapping>

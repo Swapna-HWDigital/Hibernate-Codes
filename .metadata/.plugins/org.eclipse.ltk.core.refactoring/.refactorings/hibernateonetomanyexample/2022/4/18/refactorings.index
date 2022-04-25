@@ -1,0 +1,11 @@
+1650859906105	Rename package 'com.hexaware.hibernateexample'
+1650859923485	Rename package 'com.hexaware.hibernateexample.util'
+1650859946728	Rename package 'com.hexaware.hibernateexample.entity'
+1650861589350	Encapsulate field 'student'
+1650861602670	Encapsulate field 'courses'
+1650863845717	Encapsulate field 'studentProfile'
+1650863853156	Encapsulate field 'student'
+1650864538532	Encapsulate field 'students'
+1650864580103	Encapsulate field 'applications'
+1650867499799	Copy packages
+1650873824826	Copy compilation unit

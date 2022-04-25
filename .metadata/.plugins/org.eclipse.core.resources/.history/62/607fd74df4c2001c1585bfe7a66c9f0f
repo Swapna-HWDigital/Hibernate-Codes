@@ -1,0 +1,41 @@
+package com.hexaware.hibernateexample;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.hexaware.hibernateexample.entity.Course;
+import com.hexaware.hibernateexample.entity.Student;
+import com.hexaware.hibernateexample.util.HibernateUtil;
+
+public class HibenateDemo {
+
+	public static void main(String[] args) {
+		
+		Student student1 = new Student(125,"Krishna R","krisr@gmail.com");
+		Course javaCourse = new Course(451L,"Java Basics",15000);
+		Transaction transaction = null;
+		Session session = null;
+		
+		try {
+			//open session
+			session = HibernateUtil.getSessionFactory().openSession();
+			//start transaction
+			transaction = session.beginTransaction();
+			//insert(save) the student objects
+			session.save(student1);
+			session.save(javaCourse);
+			//commit the transaction
+			transaction.commit();
+		}catch (Exception e) {
+			if(transaction != null) {
+				transaction.rollback();
+			}
+			e.printStackTrace();
+		}
+		
+		
+		
+
+	}
+
+}

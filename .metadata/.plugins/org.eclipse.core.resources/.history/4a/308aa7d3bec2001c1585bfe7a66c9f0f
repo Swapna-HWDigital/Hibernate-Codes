@@ -1,0 +1,17 @@
+package com.hexaware.dbconnection;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class DBConnection {
+	
+	/*
+	 * Method to connect with DB
+	 */
+	static public Connection conn = null;
+	static public PreparedStatement pstmt = null;
+	public Connection getDBConnection() {
+		
+	}
+
+}

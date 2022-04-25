@@ -1,0 +1,5 @@
+package com.hexaware.inheritanceinhibernate;
+
+public class TestHibernateInheritance {
+
+}
